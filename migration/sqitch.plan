@@ -1,0 +1,9 @@
+%syntax-version=1.0.0
+%project=azap
+
+init 2021-07-15T13:00:35Z Estelle-K <estelleko@gmail.com> # create bdd
+constraints/library_name 2021-07-15T13:00:35Z Estelle-K <estelleko@gmail.com> # add constraint for library names
+functions/add_user 2021-07-19T13:22:32Z AnthonyCau <getroaerospace@gmail.com> # Create a SQL function to add a User
+functions/update_user 2021-07-20T13:54:33Z Estelle-K <estelleko@gmail.com> # function update user
+functions/add_library 2021-07-21T09:18:06Z Estelle-K <estelleko@gmail.com> # function create library
+functions/update_library 2021-07-21T10:54:35Z Estelle-K <estelleko@gmail.com> # function update library

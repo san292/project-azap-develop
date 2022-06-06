@@ -1,0 +1,7 @@
+APPARTIENT A, 0N BIBLIOTHEQUE, 0N FILM
+BIBLIOTHEQUE: name
+:
+
+FILM: id_themoviedb, vu
+POSSEDE, 0N UTILISATEUR, 11 BIBLIOTHEQUE
+UTILISATEUR: email, pseudo, mot de passe, adulte, rôle

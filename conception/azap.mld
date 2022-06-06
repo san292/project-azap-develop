@@ -1,0 +1,5 @@
+BELONGS TO ( name, id_themoviedb )
+LIBRARY ( id, name, #user_id)
+MOVIE ( id_themoviedb, seen )
+USER ( id, email, username, password, adult, role )
+LIBRARY_HAS_MOVIE ( #id_themoviedb, #library_id )

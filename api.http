@@ -1,0 +1,143 @@
+### Ajouter un user
+POST http://localhost:8000/v1/signup
+Content-Type: application/json
+
+{
+    "email": "darkvador@gmail.com",
+    "username": "darkVador",
+    "password": "passwordCrypted88",
+    "adult": true,
+    "role": "admin"
+}
+
+### Test de login ADMIN
+POST http://localhost:8000/v1/login
+Content-Type: application/json
+
+{
+    "email": "Weston.Price@hotmail.com",
+    "password": "OsJzJ4QdGRi3mdJ"
+}
+
+
+### Test de logout
+GET http://localhost:8000/v1/logout
+Content-Type: application/json
+
+### Test admin/users
+GET http://localhost:3000/v1/admin/users
+Content-Type: application/json
+
+### Test admin/delete
+DELETE  http://localhost:3000/v1/admin/delete/2
+Content-Type: application/json
+
+
+### Recherche de tous les users
+GET http://localhost:3000/v1/users
+Content-Type: application/json
+
+
+
+### Recherche de toutes les libraries de l'user
+GET http://localhost:3000/v1/libraries
+Content-Type: application/json
+
+### Test delete user
+DELETE http://localhost:3000/v1/account/delete
+Content-Type: application/json
+
+{
+    "email": "darkvador@gmail.com",
+    "password": "passwordCrypted88"
+}
+
+
+### Test email reset
+PUT http://localhost:3000/v1/account/email/reset
+Content-Type: application/json
+
+{
+    "email": "alana.ritchie@gmail.com"
+}
+
+### Test email update
+PUT http://localhost:3000/v1/account/username/reset
+Content-Type: application/json
+
+{
+    "username": "Dark.Vador"
+}
+
+
+### ***************** TEST de la fonction Random *****************
+
+### Test de login d'un user
+POST http://localhost:3000/v1/login
+Content-Type: application/json
+
+{
+    "email": "Demetris84@gmail.com",
+    "password": "passwordcrypted45"
+  }
+
+### Test password reset
+PUT http://localhost:3000/v1/password/reset
+Content-Type: application/json
+
+{
+    "password": "passwordcrypted45"
+}
+
+### Test get all libraries
+GET http://localhost:3000/v1/libraries/
+Content-Type: application/json
+
+{
+    "username": "yan1"
+}
+
+### Test fonction random dans une library
+GET http://localhost:3000/v1/libraries/8/random
+Content-Type: application/json
+
+{
+    "username": "yan1"
+}
+
+
+### ***************** TEST de la fonction show Movies in a library *****************
+
+### Test de login d'un user
+POST http://localhost:3000/v1/login
+Content-Type: application/json
+
+{
+    "email": "yan1@hotmail.com",
+    "password": "Yann123456"
+  }
+
+### Test show movies in library
+GET http://localhost:3000/v1/librairies/610
+
+
+
+### Ajouter une library
+POST http://localhost:3000/v1/libraries/add
+Content-Type: application/json
+
+{
+    "name": "comedie"
+}
+
+### Delete une librarie de l'user
+DELETE http://localhost:3000/v1/libraries/609/delete
+Content-Type: application/json
+
+### Test library update
+PUT http://localhost:3000/v1/libraries/610/edit
+Content-Type: application/json
+
+{
+    "name": "week-end"
+}
